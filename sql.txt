@@ -1,0 +1,280 @@
+Ass-1
+
+1que
+
+1)
+
+  create database empolyee;
+  use empolyee;
+
+
+
+2)
+
+create table employee_details
+  2  (
+  3  emp_id number(4),
+  4  emp_name varchar2(20),
+  5  job_name varchar2(20),
+  6  manager_id number(7),
+  7  hire_date date,
+  8  salary number(7),
+  9  dep_id number(5)
+ 10  );
+
+
+3)
+
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1201
+Enter value for b: 'hani'
+Enter value for c: 'manager'
+Enter value for d: 1
+Enter value for e: '10-jan-01'
+Enter value for f: 80000
+Enter value for g: 1
+------------------------------------------------------------------------------------------------------------------------
+
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1202
+Enter value for b: 'kavya'
+Enter value for c: 'developer'
+Enter value for d: 2
+Enter value for e: '24-jan-20'
+Enter value for f: 60000
+Enter value for g: 2
+--------------------------------------------------------------------------------------------------------------------------
+
+
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1212
+Enter value for b: 'gulshan'
+Enter value for c: 'developer'
+Enter value for d: 3
+Enter value for e: '18-mar-02'
+Enter value for f: 65000
+Enter value for g: 3
+----------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1211
+Enter value for b: 'dighvijay'
+Enter value for c: 'programmer'
+Enter value for d: 4
+Enter value for e: '23-dec-02'
+Enter value for f: 75000
+Enter value for g: 4
+--------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1218
+Enter value for b: 'vinnu'
+Enter value for c: 'anaylst'
+Enter value for d: 5
+Enter value for e: '03-mar-02'
+Enter value for f: 45000
+Enter value for g: 5
+--------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1244
+Enter value for b: 'Anitha'
+Enter value for c: 'analyst'
+Enter value for d: 6
+Enter value for e: '14-feb-02'
+Enter value for f: 75000
+Enter value for g: 6
+---------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1210
+Enter value for b: 'Abhi'
+Enter value for c: 'analyst'
+Enter value for d: 7
+Enter value for e: '20-aug-02'
+Enter value for f: 65000
+Enter value for g: 7
+-------------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1203
+Enter value for b: 'vyshu'
+Enter value for c: 'analyst'
+Enter value for d: 8
+Enter value for e: '25-nov-02'
+Enter value for f: 85000
+Enter value for g: 8
+--------------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1265
+Enter value for b: 'Surya'
+Enter value for c: 'Full stack developer'
+Enter value for d: 9
+Enter value for e: '09-oct-01'
+Enter value for f: 30000
+Enter value for g: 9
+--------------------------------------------------------------------------------------------------------------------
+SQL> insert into employee_details values(&a,&b,&c,&d,&e,&f,&g);
+Enter value for a: 1227
+Enter value for b: 'Arjun'
+Enter value for c: 'web developer'
+Enter value for d: 10
+Enter value for e: '27-sep-02'
+Enter value for f: 95000
+Enter value for g: 10
+
+4)
+
+ select salary from employee_details;
+
+
+5)
+
+SQL> select distinct job_name from employee_details;
+
+6)
+
+SQL> update employee_details set salary=70000 where emp_name='raj';
+
+
+
+2que
+
+
+1)
+
+create user Football identified by system;
+
+2.SQL> create table Football_venue
+  2  (
+  3  venue_id number(5),
+  4  venue_name varchar2(20),
+  5  city_id number(5),
+  6  capacity number(5));
+
+Table created.
+
+3.SQL> insert into Football_venue values
+  2  (
+  3  1201,
+  4  'paris',
+  5  38756,
+  6  5000
+  7  );
+
+1 row created.
+
+
+
+SQL> insert into Football_venue values
+  2  (
+  3  2122,
+  4  'russia',
+  5  12347,
+  6  7500
+  7  );
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  20003,
+  4  'france',
+  5  10004,
+  6  60007
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  20004,
+  4  'Amsterdam',
+  5  10008,
+  6  38048
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1218,
+  4  'Brazil',
+  5  78000,
+  6  78063
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1244,
+  4  'Quatar',
+  5  19876,
+  6  2000
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1202,
+  4  'Nigeria',
+  5  11000,
+  6  3900
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1210,
+  4  'South Korea',
+  5  11987,
+  6  7654
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1212,
+  4  'Russia',
+  5  12498,
+  6  5000
+);
+
+1 row created.
+
+SQL> insert into Football_venue values
+  2  (
+  3  1211,
+  4  'Norway',
+  5  12345,
+  6  4000
+);
+
+1 row created.
+
+
+4. SQL> select count(*) from Football_venue;
+
+
+5. SQL> alter table Football_venue
+   2  rename column venue_name to Location;
+
+
+
+SQL> alter table Football_venue
+  2  rename column capacity to volume;
+
+SQL>select * from Football_venue;
+
+SQL> select Location,volume from Football_venue;
+
+6. SQL> alter table Football_venue
+   2  rename column Location to venue_name;
+
+SQL> update Football_venue set venue_name='Australia' where venue_name='France';
+
+SQL> select * from Football_venue;
+
+SQL> delete from Football_venue
+  2  where venue_name='Australia';
+
+SQL> select * from Football_venue;
